@@ -1,25 +1,33 @@
 ﻿using System.Diagnostics;
 
 Stopwatch stopWatch = new Stopwatch();
-stopWatch.Start(); 
+stopWatch.Start();
 var init_i = 2;
 var init_j = 3;
 
-var matrix = new int[2, 3];
+var matrix = new int[2, 3];//0,0 -> 1,2
+//var x = Math.PI;
+DisplayMatrix();
 
-for (int i = 0; i < init_i; i++)
-{
-    for (int j = 0; j < init_j; j++)
-    {
-        matrix[i, j] = i + j;
-        Console.Write(matrix[i, j]);
-        if (j < init_j - 1)
-        {
-            Console.Write(", ");
-        }
-    }
-    Console.WriteLine();
-}
 stopWatch.Stop();
-Console.WriteLine(stopWatch.ElapsedMilliseconds);
+Console.Write(stopWatch.ElapsedMilliseconds);
+Console.Write(" Milliseconds");
+
+
+void DisplayMatrix()
+{
+    for (int i = 0; i < init_i; i++)
+    {
+        for (int j = 0; j < init_j; j++)
+        {
+            matrix[i, j] = i + j;
+            Console.Write(matrix[i, j]);
+            if (j < init_j - 1)
+            {
+                Console.Write(", ");
+            }
+        }
+        Console.WriteLine();
+    }
+}
 
