@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MatrixMaxiel", "MatrixMaxie
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculateTime", "CalculateTime\CalculateTime.csproj", "{2EFF34C5-C3B2-46F8-AF63-55305702973E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawingMaxiel", "DrawingMaxiel\DrawingMaxiel.csproj", "{9B976EDD-D572-4277-8516-3ED6F43E277A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2EFF34C5-C3B2-46F8-AF63-55305702973E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EFF34C5-C3B2-46F8-AF63-55305702973E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EFF34C5-C3B2-46F8-AF63-55305702973E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B976EDD-D572-4277-8516-3ED6F43E277A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B976EDD-D572-4277-8516-3ED6F43E277A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B976EDD-D572-4277-8516-3ED6F43E277A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B976EDD-D572-4277-8516-3ED6F43E277A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
