@@ -1,4 +1,8 @@
-﻿var init_i = 2;
+﻿using System.Diagnostics;
+
+Stopwatch stopWatch = new Stopwatch();
+stopWatch.Start(); 
+var init_i = 2;
 var init_j = 3;
 
 var matrix = new int[2, 3];
@@ -16,4 +20,6 @@ for (int i = 0; i < init_i; i++)
     }
     Console.WriteLine();
 }
+stopWatch.Stop();
+Console.WriteLine(stopWatch.ElapsedMilliseconds);
 
