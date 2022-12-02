@@ -5,7 +5,11 @@ stopWatch.Start();
 var init_i = 2;
 var init_j = 3;
 
-var matrix = new int[2, 3];//0,0 -> 1,2
+int[] data = { 1, 2, 3, 4, 5, 6 };
+
+var matrix = new int[2, 3];//[2, 3] 0,0 -> 1,2
+
+
 //var x = Math.PI;
 DisplayMatrix();
 
@@ -20,7 +24,7 @@ void DisplayMatrix()
     {
         for (int j = 0; j < init_j; j++)
         {
-            matrix[i, j] = i + j;
+            AddMatrix(i, j);
             Console.Write(matrix[i, j]);
             if (j < init_j - 1)
             {
@@ -31,3 +35,7 @@ void DisplayMatrix()
     }
 }
 
+void AddMatrix(int i, int j)
+{
+    matrix[i, j] = data[i* init_j + j];
+}
