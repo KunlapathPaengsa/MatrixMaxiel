@@ -21,8 +21,6 @@
                 if (fraction > 0)
                 {
                     _row = _row + 1;
-                    //_aray.CopyTo(result, 0);
-                    //_array = result;
                     Array.Resize(ref _array,_array.Length + _column - fraction);
                 }
                 return _row;

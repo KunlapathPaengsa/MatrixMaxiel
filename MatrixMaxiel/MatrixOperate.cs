@@ -4,8 +4,7 @@
     {
         public T[,] ToMatrix()
         {
-            _row = this.Row;
-            var matrix = new T[_row, _column];
+            var matrix = new T[Row, _column];
             for (int j = 0; j < _column; j++)
             {
                 for (int i = 0; i < _row; i++)
