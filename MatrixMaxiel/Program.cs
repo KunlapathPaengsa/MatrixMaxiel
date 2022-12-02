@@ -1,13 +1,16 @@
-﻿using System.Diagnostics;
+﻿using MatrixMaxiel;
+using System.Diagnostics;
 
 Stopwatch stopWatch = new Stopwatch();
 stopWatch.Start();
-int[] data = { 1, 2, 3, 4, 5, 6 };
-var column = 3;
+//int[] data = { 1, 2, 3, 4, 5, 6 };
+int[] data = { 1, 2, 3, 4, 5, 6, 7 };
+//var x = IEnumerator
+//var column = 3;
 
 
-var row = data.Length/column;
-var matrix = new int[row, column];//[2, 3] 0,0 -> 1,2
+var testMatrix = new Matrix<int>(3, data);
+var resultMatrix = testMatrix.ToMatrix();
 
 
 //var x = Math.PI;
@@ -20,22 +23,18 @@ Console.Write(" Milliseconds");
 
 void DisplayMatrix()
 {
-    for (int i = 0; i < row; i++)
+    for (int i = 0; i < testMatrix.Row; i++)
     {
-        for (int j = 0; j < column; j++)
+        for (int j = 0; j < testMatrix.Column; j++)
         {
-            AddMatrix(i, j);
-            Console.Write(matrix[i, j]);
-            if (j < column - 1)
+            //AddMatrix(i, j);
+            Console.Write(resultMatrix[i, j]);
+            if (j < testMatrix.Column - 1)
             {
                 Console.Write(", ");
             }
         }
         Console.WriteLine();
     }
-}
-
-void AddMatrix(int i, int j)
-{
-    matrix[i, j] = data[i* column + j];
+    Console.WriteLine($"Dim({testMatrix.Row},{testMatrix.Column})");
 }
