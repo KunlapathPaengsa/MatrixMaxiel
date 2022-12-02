@@ -20,7 +20,7 @@ Console.Write(" Milliseconds");
 
 void DisplayMatrix()
 {
-    for (int i = 0; i < data.Length / column; i++)
+    for (int i = 0; i < row; i++)
     {
         for (int j = 0; j < column; j++)
         {
