@@ -2,12 +2,12 @@
 
 Stopwatch stopWatch = new Stopwatch();
 stopWatch.Start();
-var init_i = 2;
-var init_j = 3;
-
 int[] data = { 1, 2, 3, 4, 5, 6 };
+var column = 3;
 
-var matrix = new int[2, 3];//[2, 3] 0,0 -> 1,2
+
+var row = data.Length/column;
+var matrix = new int[row, column];//[2, 3] 0,0 -> 1,2
 
 
 //var x = Math.PI;
@@ -20,13 +20,13 @@ Console.Write(" Milliseconds");
 
 void DisplayMatrix()
 {
-    for (int i = 0; i < init_i; i++)
+    for (int i = 0; i < data.Length / column; i++)
     {
-        for (int j = 0; j < init_j; j++)
+        for (int j = 0; j < column; j++)
         {
             AddMatrix(i, j);
             Console.Write(matrix[i, j]);
-            if (j < init_j - 1)
+            if (j < column - 1)
             {
                 Console.Write(", ");
             }
@@ -37,5 +37,5 @@ void DisplayMatrix()
 
 void AddMatrix(int i, int j)
 {
-    matrix[i, j] = data[i* init_j + j];
+    matrix[i, j] = data[i* column + j];
 }
