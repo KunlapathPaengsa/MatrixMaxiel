@@ -4,6 +4,10 @@ using System.Drawing.Imaging;
 
 Stopwatch stopWatch = new Stopwatch();
 stopWatch.Start();
+byte[] imgdata = File.ReadAllBytes(@"C:\Users\Maxiel\Pictures\RandomImageMatrix.png");//13472 byte
+
+var t = GetImageFromByteArray(imgdata);
+
 var bmp = (Bitmap)Image.FromFile(@"C:\Users\Maxiel\Pictures\RandomImageMatrix.png");
 
 Random rand = new Random();
